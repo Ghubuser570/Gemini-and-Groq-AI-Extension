@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Context-Aware Email Automation</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>⚙️ Configuration Hub</h2>
+    
+    <div class="input-group">
+      <label for="gemini-key">Gemini API Key:</label>
+      <input type="password" id="gemini-key" placeholder="Enter Gemini Key...">
+    </div>
+
+    <div class="input-group">
+      <label for="groq-key">Groq API Key:</label>
+      <input type="password" id="groq-key" placeholder="Enter Groq Key...">
+    </div>
+
+    <div class="input-group">
+      <label for="active-model">Active Routing Engine:</label>
+      <select id="active-model">
+        <option value="gemini">Google Gemini (Deep Context)</option>
+        <option value="groq">Groq (Ultra-Fast Inference)</option>
+      </select>
+    </div>
+
+    <button id="save-btn">Deploy Settings 🚀</button>
+    <div id="status-msg" class="hidden">Configuration Locked! 🔒</div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
